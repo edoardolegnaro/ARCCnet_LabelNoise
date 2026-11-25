@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "arccnet-labelnoise"
+version = "1.0.0"
+description = "Grouped cross-validation benchmark and label-noise analysis of solar active-region cutouts"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "BSD-3-Clause"
+license-files = ["LICENSE.rst"]
+authors = [{name = "Edoardo Legnaro"}]
+keywords = ["solar physics", "active regions", "Mount Wilson classification", "deep learning", "label noise"]
+dependencies = [
+    # ARCCnet is not on PyPI. This package uses its v0.4.0 data utilities and Hale modules unchanged.
+    "arccnet[models] @ git+https://github.com/ARCAFF/ARCCnet.git@v0.4.0",
+    "numpy",
+    "pandas",
+    "scikit-learn",
+    "torch",
+    "torchvision",
+    "torchmetrics",
+    "pytorch-lightning",
+    "timm",
+]
+
+[project.urls]
+Repository = "https://github.com/edoardolegnaro/ARCCnet_LabelNoise"
+
+[project.optional-dependencies]
+tests = ["pytest"]
+
+[tool.setuptools]
+packages = ["arccnet_labelnoise"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

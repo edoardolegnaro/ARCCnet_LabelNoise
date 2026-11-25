@@ -1,0 +1,1 @@
+"""Grouped Hale cutout benchmark."""
