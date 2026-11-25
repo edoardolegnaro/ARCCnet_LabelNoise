@@ -2,7 +2,7 @@
 
 Code and derived tables for Legnaro et al., "Deep-Learning Classification and
 Label-Noise Analysis of Solar Active-Region Cutouts". The images and labels are
-the ARCAFF Cutout Classification Dataset (CUTSET, doi:10.5281/zenodo.17865447).
+the ARCAFF:CCD catalog (doi:10.5281/zenodo.17865447).
 
 The package builds on [ARCCnet](https://github.com/ARCAFF/ARCCnet) v0.4.0 and uses
 its data utilities and Hale classification modules unchanged.
